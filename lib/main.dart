@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: MyHomePage(title: 'Portifólio'),
+      home: MyHomePage(title: 'Portifólio do Israel Hudson'),
     );
   }
 }
@@ -27,7 +27,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,6 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Image.network(
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8sjYFHjZb7SdDGqA42i3kEi8sgafg99HhrhUclZRqPyzglhV-vJrs_u_-NhcPlwNwq2c&usqp=CAU'),
             Text(
               'Bem vindo ao meu portifolio',
             ),
