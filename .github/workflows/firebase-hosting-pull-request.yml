@@ -13,10 +13,11 @@ jobs:
         with:
           flutter-version: '2.0.5'
       - run: flutter pub get
+      - run: flutter analyze
       - run: flutter test
       - run: flutter build web
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FLUTTER_PORTIFOLIO }}'
-          projectId: flutter-portifolio
+      # - uses: FirebaseExtended/action-hosting-deploy@v0
+      #   with:
+      #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
+      #     firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FLUTTER_PORTIFOLIO }}'
+      #     projectId: flutter-portifolio
